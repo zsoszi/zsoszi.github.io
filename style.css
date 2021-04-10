@@ -1,0 +1,115 @@
+html {
+    background-color: whitesmoke;
+}
+
+body {
+    font-family: 'Baloo Bhania 2', cursive;
+}
+
+#viewer {
+    width: 1000px;
+    height: 500px;
+    /*background-color: blue;*/
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    position: relative;
+}
+
+#photo {
+    width: 100%;
+    height: 100%;
+}
+
+#bal {
+    background-image: url("http://stayathome-syllabus.greenfox.academy/week03/assets/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50px;
+    background-color: ivory;
+    cursor: pointer;
+}
+
+#jobb {
+    background-image: url("http://stayathome-syllabus.greenfox.academy/week03/assets/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    width: 50px;
+    background-color: ivory;
+    cursor: pointer;
+}
+
+#jobb.hover {
+    opacity: 50%;
+}
+
+#bal.hover {
+    opacity: 50%;
+}
+
+#img-container {
+    width: 100%;
+}
+
+.photo-texts {
+    background-color: rgba(43, 36, 36, 0.5);
+    color: white;
+    width: 920px;
+    position: absolute;
+    bottom: 0px;
+}
+
+h1,
+p {
+    margin-left: 10px;
+    margin-right: 15px;
+}
+
+h1 {
+    line-height: 2em;
+}
+
+#thumbnails {
+    width: 1000px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    bottom: -140px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.speech-bubble {
+    position: relative;
+    left: -45px;
+    top: -10px;
+    display: none;
+    background-color: #242222;
+    border-radius: 5px;
+    width: 100%;
+    height: 30px;
+    font-size: 12px;
+    padding: 5px;
+    color: white;
+    text-align: center;
+}
+
+#containerPhoto:hover+.speech-bubble {
+    display: block;
+}
+
+.container {
+    margin-top: 20px;
+    box-shadow: 0px 0px 2px 2px black;
+    width: 120px;
+    height: 90px;
+}
+
+#containerPhoto {
+    width: 100%;
+    height: 100%;
+}
